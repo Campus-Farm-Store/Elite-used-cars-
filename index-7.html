@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Elite Quality Used Cars Lusaka | Used Cars for Sale in Zambia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1D4ED8;--bd:#1E3A8A;--bl:#EFF6FF;--bm:#BFDBFE;
+  --w:#fff;--pg:#F8FAFD;--ink:#111827;--mu:#6B7280;--br:#E5E7EB;
+  --gr:#16A34A;--gd:#15803D;--red:#DC2626;--pu:#7C3AED;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--pg);line-height:1.55;}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;line-height:1.12;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px;}
+a{color:inherit;text-decoration:none;}
+input,select{font-family:'Inter',sans-serif;font-size:.9rem;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.9rem;border:none;cursor:pointer;transition:transform .15s,box-shadow .15s;}
+.btn:hover{transform:translateY(-2px);}
+.bb{background:var(--blue);color:#fff;}.bb:hover{background:var(--bd);}
+.bw{background:var(--gr);color:#fff;}.bw:hover{background:var(--gd);}
+.bc{background:var(--w);color:var(--bd);border:2px solid var(--blue);}.bc:hover{background:var(--bl);}
+.bdk{background:var(--bd);color:#fff;}
+.bpb{background:#166534;color:#fff;}
+.brd{background:var(--red);color:#fff;}
+.bgr{background:var(--pg);color:var(--ink);border:1px solid var(--br);}
+.bsm{padding:7px 12px;font-size:.78rem;}
+
+/* HEADER */
+.hd{position:sticky;top:0;background:var(--bd);z-index:20;box-shadow:0 2px 10px rgba(0,0,0,.2);}
+.hi{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;max-width:1100px;margin:0 auto;}
+.brand{font-family:'Archivo Black',sans-serif;font-size:.97rem;letter-spacing:.04em;color:#fff;cursor:default;user-select:none;}
+.brand span{color:#93C5FD;}
+.hloc{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:rgba(255,255,255,.5);}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--bd),var(--blue));color:#fff;padding:36px 0 30px;}
+.hero h1{font-size:clamp(1.7rem,4vw,2.7rem);}
+.hl{color:#93C5FD;}
+.hsub{margin-top:9px;font-size:.95rem;max-width:490px;color:rgba(255,255,255,.8);}
+.spill{margin-top:18px;display:inline-flex;align-items:center;gap:11px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:9px 15px;}
+.spill .snum{font-family:'Archivo Black',sans-serif;font-size:1.55rem;color:#93C5FD;}
+.spill .slbl{font-size:.78rem;color:rgba(255,255,255,.68);line-height:1.3;}
+
+/* FILTER */
+.fb{background:var(--w);border-bottom:1px solid var(--br);padding:11px 0;position:sticky;top:50px;z-index:10;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.fi{display:flex;gap:6px;flex-wrap:wrap;align-items:center;max-width:1100px;margin:0 auto;padding:0 20px;}
+.flbl{font-size:.73rem;color:var(--mu);margin-right:3px;font-weight:500;}
+.fbt{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;padding:5px 12px;border-radius:20px;border:1.5px solid var(--br);background:var(--w);color:var(--ink);cursor:pointer;transition:all .14s;}
+.fbt:hover{border-color:var(--blue);color:var(--blue);}
+.fbt.on{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+/* LISTINGS */
+.ls{padding:40px 0 56px;}
+.lh{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px;margin-bottom:26px;}
+.lh h2{font-size:clamp(1.35rem,3vw,1.9rem);color:var(--bd);}
+.lh p{max-width:430px;color:var(--mu);margin-top:5px;font-size:.88rem;}
+.qc{width:70px;height:70px;border-radius:50%;border:2.5px double var(--blue);color:var(--blue);display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:.58rem;font-weight:700;text-align:center;transform:rotate(-8deg);flex-shrink:0;}
+.qc .ck{font-size:1.1rem;line-height:1;}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:20px;}
+.nores{display:none;text-align:center;padding:40px;color:var(--mu);grid-column:1/-1;font-size:.93rem;}
+
+/* CARD */
+.card{background:var(--w);border-radius:12px;overflow:hidden;border:1px solid var(--br);box-shadow:0 2px 8px rgba(0,0,0,.06);transition:transform .18s,box-shadow .18s;display:flex;flex-direction:column;}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px -8px rgba(29,78,216,.14);}
+.cp{aspect-ratio:16/10;width:100%;background:var(--bl);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.cp img{width:100%;height:100%;object-fit:cover;display:block;}
+.noph{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.noph span{font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.1em;color:#93C5FD;text-transform:uppercase;}
+.ttg{position:absolute;top:9px;left:9px;font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.07em;text-transform:uppercase;background:var(--bd);color:#fff;padding:3px 8px;border-radius:4px;}
+.stg{position:absolute;top:9px;right:9px;font-family:'IBM Plex Mono',monospace;font-size:.58rem;text-transform:uppercase;padding:3px 8px;border-radius:4px;font-weight:700;}
+.sa{background:#DCFCE7;color:#166534;}.sr{background:#FEF3C7;color:#92400E;}.ss{background:#FEE2E2;color:#991B1B;}
+.cb{padding:15px;flex:1;display:flex;flex-direction:column;}
+.cstk{font-family:'IBM Plex Mono',monospace;font-size:.62rem;letter-spacing:.1em;color:var(--blue);font-weight:700;}
+.cnm{font-family:'Archivo Black',sans-serif;font-size:1.05rem;margin-top:3px;color:var(--bd);line-height:1.2;}
+.cpr{font-family:'IBM Plex Mono',monospace;font-size:1.28rem;font-weight:700;color:var(--blue);margin-top:7px;}
+.cpr .cu{font-size:.8rem;font-weight:500;color:var(--mu);}
+.csp{display:grid;grid-template-columns:1fr 1fr;gap:5px 8px;margin-top:10px;padding-top:9px;border-top:1px solid var(--br);}
+.sk{font-family:'IBM Plex Mono',monospace;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);}
+.sv{font-size:.78rem;font-weight:600;color:var(--ink);}
+.cch{display:flex;flex-wrap:wrap;gap:4px;margin-top:9px;}
+.pil{font-size:.68rem;background:var(--bl);color:var(--bd);padding:2px 7px;border-radius:20px;border:1px solid var(--bm);}
+.pil::before{content:"\2713 ";color:var(--gr);font-weight:700;}
+.cta{margin-top:auto;padding-top:11px;}
+.cta .bw{width:100%;font-size:.84rem;padding:10px 14px;}
+
+/* WANT */
+.want{margin-top:28px;padding:24px;background:var(--w);border-radius:12px;border:2px dashed var(--bm);text-align:center;}
+.wsb{font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;}
+.want h3{margin-top:7px;font-size:1.05rem;color:var(--bd);}
+.want p{margin-top:7px;color:var(--mu);font-size:.87rem;max-width:360px;margin-left:auto;margin-right:auto;}
+
+/* WHY */
+.why{background:var(--w);border-top:1px solid var(--br);border-bottom:1px solid var(--br);padding:46px 0;}
+.why h2{font-size:clamp(1.3rem,3vw,1.8rem);color:var(--bd);margin-bottom:20px;}
+.wg{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px;}
+.wi{display:flex;gap:12px;align-items:flex-start;}
+.wic{width:33px;height:33px;border-radius:7px;background:var(--bl);border:1px solid var(--bm);color:var(--blue);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.9rem;}
+.wi strong{display:block;font-size:.88rem;color:var(--bd);margin-bottom:2px;}
+.wi p{font-size:.84rem;color:#374151;margin:0;}
+
+/* CONTACT */
+.ct{background:var(--bd);color:#fff;padding:46px 0;}
+.ct h2{font-size:clamp(1.35rem,3.5vw,1.95rem);}
+.ctlead{margin-top:9px;color:rgba(255,255,255,.72);max-width:460px;font-size:.92rem;}
+.crow{margin-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;}
+.cinf{font-family:'IBM Plex Mono',monospace;font-size:.84rem;color:rgba(255,255,255,.78);display:flex;flex-direction:column;gap:8px;}
+.cbt{display:flex;gap:10px;flex-wrap:wrap;}
+.cbt .btn{font-size:.93rem;padding:13px 22px;}
+.cbt .bc{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3);}.cbt .bc:hover{background:rgba(255,255,255,.16);}
+.fine{margin-top:30px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:.72rem;color:rgba(255,255,255,.3);}
+
+/* OVERLAY */
+.ov{position:fixed;inset:0;background:rgba(15,23,42,.65);z-index:100;display:none;align-items:center;justify-content:center;padding:14px;backdrop-filter:blur(3px);}
+.ov.open{display:flex;}
+
+/* LOGIN BOX */
+.lbx{background:var(--w);border-radius:14px;padding:32px 26px;max-width:320px;width:100%;text-align:center;box-shadow:0 20px 40px -10px rgba(0,0,0,.3);}
+.lico{font-size:2.3rem;margin-bottom:6px;}
+.lbx h3{font-size:1.15rem;color:var(--bd);}
+.lbx p{font-size:.81rem;color:var(--mu);margin-top:4px;}
+.pr{display:flex;gap:8px;justify-content:center;margin-top:18px;}
+.pd{width:42px;height:42px;border:2px solid var(--br);border-radius:7px;font-size:1.2rem;font-weight:700;text-align:center;color:var(--blue);font-family:'IBM Plex Mono',monospace;outline:none;}
+.pd:focus{border-color:var(--blue);}
+.pe{color:var(--red);font-size:.78rem;margin-top:8px;min-height:16px;}
+.la{margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+
+/* ADMIN PANEL */
+.ap{background:var(--w);border-radius:14px;width:100%;max-width:660px;max-height:92vh;overflow-y:auto;box-shadow:0 20px 40px -10px rgba(0,0,0,.3);}
+.ah{background:var(--bd);color:#fff;padding:17px 20px;border-radius:14px 14px 0 0;display:flex;align-items:center;justify-content:space-between;}
+.ah h3{font-size:.97rem;font-family:'Archivo Black',sans-serif;}
+.acl{background:rgba(255,255,255,.14);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.acl:hover{background:rgba(255,255,255,.24);}
+.at{display:flex;border-bottom:1px solid var(--br);}
+.tb{flex:1;padding:11px 4px;text-align:center;font-weight:600;font-size:.78rem;cursor:pointer;border-bottom:2.5px solid transparent;color:var(--mu);transition:all .13s;}
+.tb:hover{color:var(--blue);}.tb.on{color:var(--blue);border-bottom-color:var(--blue);}
+.ab{padding:18px;}
+
+/* FORM */
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+.fi2{display:flex;flex-direction:column;gap:4px;}
+.fi2.full{grid-column:1/-1;}
+.fi2 label{font-size:.74rem;font-weight:600;color:#374151;}
+.fi2 input,.fi2 select{padding:9px 10px;border:1.5px solid var(--br);border-radius:7px;outline:none;color:var(--ink);background:var(--w);}
+.fi2 input:focus,.fi2 select:focus{border-color:var(--blue);}
+.ipv{width:100%;aspect-ratio:16/9;border-radius:7px;object-fit:cover;border:1px solid var(--br);display:none;margin-top:6px;}
+.ipv.show{display:block;}
+.itip{background:var(--bl);border:1px solid var(--bm);border-radius:7px;padding:10px;font-size:.74rem;color:#1e40af;margin-top:6px;line-height:1.7;}
+.itip b{display:block;margin-bottom:2px;color:var(--bd);}
+.fa{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;}
+
+/* ADMIN LIST */
+.al{display:flex;flex-direction:column;gap:8px;}
+.ar{display:flex;align-items:center;gap:11px;padding:10px;background:var(--pg);border-radius:7px;border:1px solid var(--br);}
+.ath{width:64px;height:44px;border-radius:5px;object-fit:cover;background:var(--bl);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+.ain{flex:1;min-width:0;}
+.ain .anm{font-weight:700;font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--bd);}
+.ain .amt{font-family:'IBM Plex Mono',monospace;font-size:.65rem;color:var(--mu);margin-top:2px;}
+.aac{display:flex;gap:5px;flex-shrink:0;}
+.sp2{font-family:'IBM Plex Mono',monospace;font-size:.57rem;padding:2px 6px;border-radius:8px;font-weight:700;text-transform:uppercase;}
+.sp2.available{background:#DCFCE7;color:#166534;}.sp2.reserved{background:#FEF3C7;color:#92400E;}.sp2.sold{background:#FEE2E2;color:#991B1B;}
+
+/* SAVE CARD */
+.sc{background:var(--pg);border-radius:8px;padding:15px;border:1px solid var(--br);margin-bottom:11px;}
+.sc h4{font-size:.88rem;font-weight:700;color:var(--bd);margin-bottom:4px;}
+.sc p{font-size:.78rem;color:var(--mu);margin-bottom:10px;}
+.sc.grn{background:#F0FDF4;border-color:#BBF7D0;}.sc.org{background:#FFF7ED;border-color:#FED7AA;}.sc.rrd{background:#FFF5F5;border-color:#FECACA;}
+.steps{background:#DCFCE7;border-radius:6px;padding:10px;font-size:.72rem;color:#166534;line-height:1.9;margin-top:9px;}
+.steps b{display:block;margin-bottom:2px;font-size:.76rem;}
+#smsg{font-size:.76rem;margin-top:7px;min-height:14px;color:#166534;font-weight:600;}
+#pmsg{font-size:.77rem;margin-top:7px;min-height:14px;}
+
+/* TOAST */
+.toast{position:fixed;bottom:20px;right:20px;background:var(--bd);color:#fff;padding:11px 17px;border-radius:8px;font-size:.84rem;font-weight:500;z-index:300;transform:translateY(60px);opacity:0;transition:all .28s;pointer-events:none;box-shadow:0 6px 18px -4px rgba(0,0,0,.3);}
+.toast.show{transform:translateY(0);opacity:1;}
+
+@media(max-width:560px){.grid,.fg,.wg{grid-template-columns:1fr;} .qc{display:none;} .cbt .btn{flex:1;}}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <div class="hi">
+    <div class="brand" id="btap">ELITE <span>QUALITY</span> USED CARS</div>
+    <div class="hloc">&#128205; Minestone, Lusaka</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Elite <span class="hl">Quality</span><br>Used Cars in Lusaka</h1>
+    <p class="hsub">Hand-picked, quality-checked second-hand cars in Minestone &mdash; sedans, SUVs, hatchbacks, minivans and pickups at fair prices.</p>
+    <div class="spill">
+      <div class="snum" id="snum">0</div>
+      <div class="slbl">Cars currently<br>in stock</div>
+    </div>
+  </div>
+</section>
+
+<div class="fb">
+  <div class="fi">
+    <span class="flbl">Filter:</span>
+    <button class="fbt on" onclick="filt('all',this)">All</button>
+    <button class="fbt" onclick="filt('sedan',this)">Sedan</button>
+    <button class="fbt" onclick="filt('suv',this)">SUV / 4x4</button>
+    <button class="fbt" onclick="filt('hatchback',this)">Hatchback</button>
+    <button class="fbt" onclick="filt('minivan',this)">Minivan</button>
+    <button class="fbt" onclick="filt('pickup',this)">Pickup</button>
+  </div>
+</div>
+
+<section class="ls" id="cars">
+  <div class="wrap">
+    <div class="lh">
+      <div>
+        <h2>Cars Available Now</h2>
+        <p>Tap any car to enquire on WhatsApp &mdash; get photos, negotiate price, or book a viewing in Minestone.</p>
+      </div>
+      <div class="qc"><span class="ck">&#10003;</span><span>QUALITY<br>CHECKED</span></div>
+    </div>
+    <div class="grid" id="cgrid">
+      <div class="nores" id="nores">No cars listed yet &mdash; check back soon.</div>
+    </div>
+    <div class="want">
+      <div class="wsb">More stock arriving soon</div>
+      <h3>Don&#39;t see the right car?</h3>
+      <p>Tell us your make, model and budget and we&#39;ll contact you when matching stock arrives.</p>
+      <a style="margin-top:13px;display:inline-flex;" class="btn bdk" href="https://wa.me/260975512887?text=Hi%2C%20looking%20for%20a%20specific%20car.%20Can%20you%20help%3F">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.04 2 11c0 2.42 1.12 4.6 2.96 6.18-.07.86-.32 2.36-1.06 3.6 0 0 1.92-.18 3.96-1.34A11.8 11.8 0 0012 20c5.52 0 10-4.04 10-9S17.52 2 12 2z"/></svg>
+        Tell Us What You Want
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2>What to Expect</h2>
+    <div class="wg">
+      <div class="wi"><div class="wic">&#10003;</div><div><strong>Inspected Before Listing</strong><p>Engine, gearbox, brakes, tyres and body checked before going on site.</p></div></div>
+      <div class="wi"><div class="wic">K</div><div><strong>Clear Kwacha Pricing</strong><p>No hidden extras. Listed price is the starting point for a fair conversation.</p></div></div>
+      <div class="wi"><div class="wic">&#128205;</div><div><strong>Viewings in Minestone</strong><p>Message us to book a viewing at our Minestone, Lusaka location.</p></div></div>
+      <div class="wi"><div class="wic">&#8635;</div><div><strong>Stock Updated Regularly</strong><p>New cars arrive regularly. Tell us what you want and we&#39;ll find it.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="ct">
+  <div class="wrap">
+    <h2>Ready to Buy?</h2>
+    <p class="ctlead">Message us on WhatsApp with the stock number of the car you want, or call us to arrange a viewing.</p>
+    <div class="crow">
+      <div class="cinf">
+        <span>&#128205; Minestone, Lusaka, Zambia</span>
+        <span>&#128172; +260 97 551 2887</span>
+        <span>&#128336; Mon&ndash;Sat 08:00&ndash;18:00</span>
+      </div>
+      <div class="cbt">
+        <a class="btn bw" href="https://wa.me/260975512887?text=Hi%2C%20I%20want%20to%20enquire%20about%20a%20car.">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.04 2 11c0 2.42 1.12 4.6 2.96 6.18-.07.86-.32 2.36-1.06 3.6 0 0 1.92-.18 3.96-1.34A11.8 11.8 0 0012 20c5.52 0 10-4.04 10-9S17.52 2 12 2z"/></svg>
+          WhatsApp Us
+        </a>
+        <a class="btn bc" href="tel:+260975512887">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.58 1 1 0 01-.25 1.02l-2.2 2.19z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+    <div class="fine">&copy; 2026 Elite Quality Used Cars &middot; Minestone, Lusaka, Zambia &middot; All prices in Zambian Kwacha (ZMW)</div>
+  </div>
+</section>
+
+<!-- LOGIN -->
+<div class="ov" id="ovl">
+  <div class="lbx">
+    <div class="lico">&#128272;</div>
+    <h3>Admin Access</h3>
+    <p>Enter your 4-digit PIN</p>
+    <div class="pr">
+      <input class="pd" type="password" maxlength="1" id="p1" inputmode="numeric">
+      <input class="pd" type="password" maxlength="1" id="p2" inputmode="numeric">
+      <input class="pd" type="password" maxlength="1" id="p3" inputmode="numeric">
+      <input class="pd" type="password" maxlength="1" id="p4" inputmode="numeric">
+    </div>
+    <div class="pe" id="pe"></div>
+    <div class="la">
+      <button class="btn bb" onclick="chkPin()">Sign In</button>
+      <button class="btn bgr" onclick="closeL()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div class="ov" id="ova">
+  <div class="ap">
+    <div class="ah">
+      <h3>&#128663; Elite Cars &mdash; Admin</h3>
+      <button class="acl" onclick="closeA()">&#10005;</button>
+    </div>
+    <div class="at">
+      <div class="tb on" id="t1" onclick="stab('add',this)">&#10133; Add Car</div>
+      <div class="tb" id="t2" onclick="stab('manage',this)">&#128203; Manage</div>
+      <div class="tb" id="t3" onclick="stab('save',this)">&#128190; Save to Site</div>
+      <div class="tb" id="t4" onclick="stab('pin',this)">&#9881; PIN</div>
+    </div>
+
+    <!-- ADD -->
+    <div class="ab" id="tab-add">
+      <div class="fg">
+        <div class="fi2 full"><label>Car Name *</label><input type="text" id="fn" placeholder="e.g. Toyota Mark X 2010"></div>
+        <div class="fi2"><label>Price (K) *</label><input type="number" id="fp" placeholder="85000" min="0"></div>
+        <div class="fi2"><label>Stock No.</label><input type="text" id="fs" placeholder="Auto if blank"></div>
+        <div class="fi2"><label>Body Type</label>
+          <select id="ft"><option value="sedan">Sedan</option><option value="suv">SUV / 4x4</option><option value="hatchback">Hatchback</option><option value="minivan">Minivan</option><option value="pickup">Pickup / Truck</option></select>
+        </div>
+        <div class="fi2"><label>Status</label>
+          <select id="fst"><option value="available">Available</option><option value="reserved">Reserved</option><option value="sold">Sold</option></select>
+        </div>
+        <div class="fi2"><label>Mileage</label><input type="text" id="fm" placeholder="145,000 km"></div>
+        <div class="fi2"><label>Gearbox</label>
+          <select id="fg"><option>Automatic</option><option>Manual</option><option>CVT Auto</option></select>
+        </div>
+        <div class="fi2"><label>Engine</label><input type="text" id="fe" placeholder="2.5L V6"></div>
+        <div class="fi2"><label>Fuel</label>
+          <select id="ff"><option>Petrol</option><option>Diesel</option><option>Hybrid</option><option>Electric</option></select>
+        </div>
+        <div class="fi2"><label>Colour</label><input type="text" id="fc" placeholder="Pearl White"></div>
+        <div class="fi2"><label>Drive / Seats</label><input type="text" id="fd" placeholder="4WD or 7 Seater"></div>
+        <div class="fi2 full">
+          <label>&#128247; Image URL (imgur.com)</label>
+          <input type="url" id="fph" placeholder="https://i.imgur.com/xxxxxxx.jpeg" oninput="prv('fph','fpi')">
+          <img id="fpi" class="ipv" alt="Preview">
+          <div class="itip"><b>How to get your imgur link:</b>Go to imgur.com &rarr; upload photo &rarr; long-press image &rarr; Open in new tab &rarr; copy URL from address bar<br>&#10003; Must start with: i.imgur.com</div>
+        </div>
+        <div class="fi2 full"><label>Quality Checks (comma-separated)</label><input type="text" id="fch" placeholder="Engine OK, Gearbox OK, Brakes OK, AC Working"></div>
+      </div>
+      <div class="fa">
+        <button class="btn bb" onclick="addCar()">&#10133; Add Car</button>
+        <button class="btn bgr" onclick="clrForm()">Clear</button>
+      </div>
+    </div>
+
+    <!-- MANAGE -->
+    <div class="ab" id="tab-manage" style="display:none;">
+      <div class="al" id="alist"></div>
+      <p id="nocp" style="display:none;color:var(--mu);text-align:center;padding:26px 0;font-size:.88rem;">No cars yet. Use Add Car tab.</p>
+    </div>
+
+    <!-- SAVE TO SITE -->
+    <div class="ab" id="tab-save" style="display:none;">
+      <div class="sc grn">
+        <h4 style="color:#166534;">&#128190; Save to Site &amp; Download</h4>
+        <p style="color:#166534;">Tap the button to download a new version of your site with all your car listings baked in. Then upload it to GitHub &mdash; everyone will see your cars instantly.</p>
+        <button class="btn bpb bsm" onclick="saveToSite()">&#8681; Download Updated Site</button>
+        <div id="smsg"></div>
+        <div class="steps">
+          <b>After downloading &mdash; 3 steps to go live:</b>
+          1. Go to your GitHub repo<br>
+          2. Tap <b>Add file &rarr; Upload files</b> &rarr; select the downloaded index.html<br>
+          3. Tap <b>Commit changes</b> &#10003;<br><br>
+          Wait 2 minutes &rarr; open your live site &rarr; cars appear for everyone &#127881;
+        </div>
+      </div>
+      <div class="sc org">
+        <h4 style="color:#92400E;">&#9888; Do this every time you change anything</h4>
+        <p>Add car, edit car, delete car &mdash; always come here after and download + upload to GitHub. Until you do, only this device sees the changes.</p>
+      </div>
+    </div>
+
+    <!-- PIN -->
+    <div class="ab" id="tab-pin" style="display:none;">
+      <div class="sc">
+        <h4>&#128273; Change PIN</h4>
+        <p>Default PIN is 1234. Change it here.</p>
+        <div class="fg">
+          <div class="fi2"><label>New PIN</label><input type="password" id="np" maxlength="4" inputmode="numeric" placeholder="&#8226;&#8226;&#8226;&#8226;"></div>
+          <div class="fi2"><label>Confirm PIN</label><input type="password" id="cp" maxlength="4" inputmode="numeric" placeholder="&#8226;&#8226;&#8226;&#8226;"></div>
+        </div>
+        <div class="fa" style="margin-top:11px;"><button class="btn bb bsm" onclick="chgPin()">Update PIN</button></div>
+        <div id="pmsg"></div>
+      </div>
+      <div class="sc rrd">
+        <h4 style="color:var(--red);">&#9888; Delete All Cars</h4>
+        <p>Removes all cars from your working list. Download &amp; upload to GitHub after.</p>
+        <button class="btn brd bsm" onclick="nukeCars()">Delete All Cars</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDIT -->
+<div class="ov" id="ove">
+  <div class="ap" style="max-width:600px;">
+    <div class="ah"><h3>&#9999; Edit Car</h3><button class="acl" onclick="closeE()">&#10005;</button></div>
+    <div class="ab">
+      <input type="hidden" id="eid">
+      <div class="fg">
+        <div class="fi2 full"><label>Car Name *</label><input type="text" id="en"></div>
+        <div class="fi2"><label>Price (K) *</label><input type="number" id="ep" min="0"></div>
+        <div class="fi2"><label>Stock No.</label><input type="text" id="es"></div>
+        <div class="fi2"><label>Body Type</label>
+          <select id="et"><option value="sedan">Sedan</option><option value="suv">SUV / 4x4</option><option value="hatchback">Hatchback</option><option value="minivan">Minivan</option><option value="pickup">Pickup / Truck</option></select>
+        </div>
+        <div class="fi2"><label>Status</label>
+          <select id="est"><option value="available">Available</option><option value="reserved">Reserved</option><option value="sold">Sold</option></select>
+        </div>
+        <div class="fi2"><label>Mileage</label><input type="text" id="em"></div>
+        <div class="fi2"><label>Gearbox</label>
+          <select id="eg"><option>Automatic</option><option>Manual</option><option>CVT Auto</option></select>
+        </div>
+        <div class="fi2"><label>Engine</label><input type="text" id="ee"></div>
+        <div class="fi2"><label>Fuel</label>
+          <select id="ef"><option>Petrol</option><option>Diesel</option><option>Hybrid</option><option>Electric</option></select>
+        </div>
+        <div class="fi2"><label>Colour</label><input type="text" id="ec"></div>
+        <div class="fi2"><label>Drive / Seats</label><input type="text" id="ed"></div>
+        <div class="fi2 full">
+          <label>&#128247; Image URL (imgur.com)</label>
+          <input type="url" id="eph" placeholder="https://i.imgur.com/xxxxxxx.jpeg" oninput="prv('eph','epi')">
+          <img id="epi" class="ipv" alt="Preview">
+        </div>
+        <div class="fi2 full"><label>Quality Checks (comma-separated)</label><input type="text" id="ech"></div>
+      </div>
+      <div class="fa">
+        <button class="btn bb" onclick="updCar()">&#128190; Save Changes</button>
+        <button class="btn bgr" onclick="closeE()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="tst"></div>
+
+<script>
+/* =====================================================
+   CARS — baked directly into this file.
+   This array IS your database. When you
+   "Save to Site", your cars are written here.
+   ===================================================== */
+var CARS = /*|CARS|*/[]/*|END|*/;
+
+/* Working copy for admin session */
+var wk = JSON.parse(JSON.stringify(CARS));
+
+/* PIN */
+var PIN = /*|PIN|*/'1234'/*|PEND|*/;
+
+/* ===== UTILS ===== */
+function ge(id){ return document.getElementById(id); }
+function gv(id){ return ge(id).value.trim(); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+/* ===== RENDER PUBLIC GRID ===== */
+var af = 'all';
+function filt(t,btn){
+  af=t;
+  document.querySelectorAll('.fbt').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+  drawGrid();
+}
+
+function drawGrid(){
+  var grid=ge('cgrid'), nr=ge('nores');
+  grid.querySelectorAll('.card').forEach(function(c){ c.remove(); });
+  var list = af==='all' ? CARS : CARS.filter(function(c){ return c.type===af; });
+  nr.style.display = list.length===0 ? 'block' : 'none';
+  ge('snum').textContent = CARS.filter(function(c){ return c.status==='available'; }).length;
+  list.forEach(function(car){ grid.insertBefore(mkCard(car), nr); });
+}
+
+var TM={sedan:'Sedan',suv:'SUV / 4x4',hatchback:'Hatchback',minivan:'Minivan',pickup:'Pickup'};
+var SM={available:'Available',reserved:'Reserved',sold:'Sold'};
+var SC={available:'sa',reserved:'sr',sold:'ss'};
+
+function mkCard(car){
+  var card=document.createElement('div'); card.className='card';
+
+  /* photo div */
+  var pd=document.createElement('div'); pd.className='cp';
+  if(car.photo){
+    var im=document.createElement('img');
+    im.alt=esc(car.name);
+    im.src=car.photo;
+    im.addEventListener('error',function(){
+      pd.innerHTML=''; pd.appendChild(noPh());
+      pd.appendChild(tg(TM[car.type]||car.type,'ttg'));
+      pd.appendChild(tg(SM[car.status]||car.status,'stg '+(SC[car.status]||'sa')));
+    });
+    pd.appendChild(im);
+  } else { pd.appendChild(noPh()); }
+  pd.appendChild(tg(TM[car.type]||car.type,'ttg'));
+  pd.appendChild(tg(SM[car.status]||car.status,'stg '+(SC[car.status]||'sa')));
+
+  /* specs */
+  var sp=[['Mileage',car.mileage],['Gearbox',car.gear],['Engine',car.engine],['Fuel',car.fuel],['Colour',car.colour],['Drive',car.drive]]
+    .filter(function(r){ return r[1]; })
+    .map(function(r){ return '<div><span class="sk">'+r[0]+'</span><span class="sv">'+esc(r[1])+'</span></div>'; }).join('');
+
+  /* checks */
+  var ch=(car.checks||'Engine OK,Gearbox OK,Brakes OK,AC Working').split(',')
+    .map(function(s){ return s.trim(); }).filter(Boolean)
+    .map(function(s){ return '<div class="pil">'+esc(s)+'</div>'; }).join('');
+
+  var wa=encodeURIComponent('Hi, I am interested in the '+car.name+' ('+car.stock+') at K'+Number(car.price).toLocaleString()+'. Is it still available?');
+
+  var bd=document.createElement('div'); bd.className='cb';
+  bd.innerHTML='<div class="cstk">'+esc(car.stock)+'</div>'+
+    '<div class="cnm">'+esc(car.name)+'</div>'+
+    '<div class="cpr"><span class="cu">K</span>'+Number(car.price).toLocaleString()+'</div>'+
+    '<div class="csp">'+sp+'</div>'+
+    '<div class="cch">'+ch+'</div>'+
+    '<div class="cta"><a class="btn bw" href="https://wa.me/260975512887?text='+wa+'">'+
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.04 2 11c0 2.42 1.12 4.6 2.96 6.18-.07.86-.32 2.36-1.06 3.6 0 0 1.92-.18 3.96-1.34A11.8 11.8 0 0012 20c5.52 0 10-4.04 10-9S17.52 2 12 2z"/></svg>'+
+    'Enquire on WhatsApp</a></div>';
+
+  card.appendChild(pd); card.appendChild(bd);
+  return card;
+}
+
+function noPh(){
+  var d=document.createElement('div'); d.className='noph';
+  d.innerHTML='<svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#93C5FD" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Photo Coming Soon</span>';
+  return d;
+}
+function tg(txt,cls){
+  var d=document.createElement('div'); d.className=cls; d.textContent=txt; return d;
+}
+
+/* ===== 5-TAP ===== */
+var tc=0,tt=null;
+ge('btap').addEventListener('click',function(){
+  tc++; clearTimeout(tt);
+  tt=setTimeout(function(){ tc=0; },1800);
+  if(tc>=5){ tc=0; openL(); }
+});
+
+/* ===== LOGIN ===== */
+function openL(){
+  ['p1','p2','p3','p4'].forEach(function(i){ ge(i).value=''; });
+  ge('pe').textContent='';
+  ge('ovl').classList.add('open');
+  setTimeout(function(){ ge('p1').focus(); },150);
+}
+function closeL(){ ge('ovl').classList.remove('open'); }
+
+['p1','p2','p3','p4'].forEach(function(id,i,a){
+  var el=ge(id);
+  el.addEventListener('input',function(){
+    this.value=this.value.replace(/\D/g,'');
+    if(this.value&&i<3) ge(a[i+1]).focus();
+    if(i===3&&this.value) setTimeout(chkPin,80);
+  });
+  el.addEventListener('keydown',function(e){
+    if(e.key==='Backspace'&&!this.value&&i>0) ge(a[i-1]).focus();
+    if(e.key==='Enter') chkPin();
+  });
+});
+
+function chkPin(){
+  var pin=['p1','p2','p3','p4'].map(function(i){ return ge(i).value; }).join('');
+  if(pin===PIN){ closeL(); openA(); }
+  else{ ge('pe').textContent='Incorrect PIN. Try again.'; ['p1','p2','p3','p4'].forEach(function(i){ ge(i).value=''; }); ge('p1').focus(); }
+}
+
+/* ===== ADMIN ===== */
+function openA(){ wk=JSON.parse(JSON.stringify(CARS)); drawList(); ge('ova').classList.add('open'); }
+function closeA(){ ge('ova').classList.remove('open'); }
+
+function stab(n,btn){
+  ['add','manage','save','pin'].forEach(function(t){ ge('tab-'+t).style.display=(t===n)?'':'none'; });
+  document.querySelectorAll('.tb').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+  if(n==='manage') drawList();
+}
+
+/* ===== IMAGE PREVIEW ===== */
+function prv(inp,prv){
+  var url=gv(inp), im=ge(prv);
+  if(url){ im.onload=function(){ im.classList.add('show'); }; im.onerror=function(){ im.classList.remove('show'); }; im.src=url; }
+  else{ im.classList.remove('show'); im.src=''; }
+}
+
+/* ===== STOCK NO ===== */
+function nxStk(){
+  if(!wk.length) return 'STK-001';
+  var n=wk.map(function(c){ var m=(c.stock||'').match(/(\d+)$/); return m?parseInt(m[1],10):0; });
+  return 'STK-'+String(Math.max.apply(null,n)+1).padStart(3,'0');
+}
+
+/* ===== ADD CAR ===== */
+function addCar(){
+  var name=gv('fn'), price=gv('fp');
+  if(!name){ toast('Car name is required'); return; }
+  if(!price||isNaN(Number(price))){ toast('Valid price required'); return; }
+  wk.unshift({ id:Date.now(), name:name, price:Number(price),
+    stock:gv('fs')||nxStk(), type:ge('ft').value, status:ge('fst').value,
+    mileage:gv('fm'), gear:ge('fg').value, engine:gv('fe'),
+    fuel:ge('ff').value, colour:gv('fc'), drive:gv('fd'),
+    photo:gv('fph'), checks:gv('fch') });
+  clrForm(); drawList();
+  toast('\u2713 Car added! Go to Save to Site tab to make it live.');
+  stab('manage',ge('t2'));
+}
+
+function clrForm(){
+  ['fn','fp','fs','fm','fe','fc','fd','fph','fch'].forEach(function(i){ ge(i).value=''; });
+  ge('fpi').classList.remove('show'); ge('fpi').src='';
+  ge('ft').value='sedan'; ge('fst').value='available';
+  ge('fg').value='Automatic'; ge('ff').value='Petrol';
+}
+
+/* ===== EDIT CAR ===== */
+function editCar(id){
+  var car=null;
+  for(var i=0;i<wk.length;i++){ if(wk[i].id===id){ car=wk[i]; break; } }
+  if(!car) return;
+  ge('eid').value=id; ge('en').value=car.name; ge('ep').value=car.price;
+  ge('es').value=car.stock||''; ge('et').value=car.type||'sedan';
+  ge('est').value=car.status||'available'; ge('em').value=car.mileage||'';
+  ge('eg').value=car.gear||'Automatic'; ge('ee').value=car.engine||'';
+  ge('ef').value=car.fuel||'Petrol'; ge('ec').value=car.colour||'';
+  ge('ed').value=car.drive||''; ge('eph').value=car.photo||'';
+  ge('ech').value=car.checks||'';
+  var ep=ge('epi');
+  if(car.photo){ ep.src=car.photo; ep.classList.add('show'); }
+  else{ ep.classList.remove('show'); ep.src=''; }
+  ge('ove').classList.add('open');
+}
+function closeE(){ ge('ove').classList.remove('open'); }
+
+function updCar(){
+  var id=Number(ge('eid').value), name=gv('en'), price=gv('ep');
+  if(!name){ toast('Name required'); return; }
+  if(!price){ toast('Price required'); return; }
+  for(var i=0;i<wk.length;i++){
+    if(wk[i].id===id){
+      wk[i]={ id:id, name:name, price:Number(price),
+        stock:gv('es')||wk[i].stock, type:ge('et').value, status:ge('est').value,
+        mileage:gv('em'), gear:ge('eg').value, engine:gv('ee'),
+        fuel:ge('ef').value, colour:gv('ec'), drive:gv('ed'),
+        photo:gv('eph'), checks:gv('ech') };
+      break;
+    }
+  }
+  closeE(); drawList();
+  toast('\u2713 Updated! Remember to Save to Site.');
+}
+
+/* ===== DELETE ===== */
+function delCar(id){
+  if(!confirm('Delete this car? Remember to Save to Site after.')) return;
+  wk=wk.filter(function(c){ return c.id!==id; });
+  drawList(); toast('\u{1F5D1} Deleted. Go to Save to Site.');
+}
+function nukeCars(){
+  if(!confirm('Delete ALL cars from your working list?')) return;
+  wk=[]; drawList(); toast('\u{1F5D1} All cars cleared. Go to Save to Site.');
+}
+
+/* ===== DRAW ADMIN LIST ===== */
+function drawList(){
+  var list=ge('alist'), nc=ge('nocp');
+  list.innerHTML='';
+  if(!wk.length){ nc.style.display='block'; return; }
+  nc.style.display='none';
+  wk.forEach(function(car){
+    var row=document.createElement('div'); row.className='ar';
+    var th;
+    if(car.photo){
+      th=document.createElement('img'); th.className='ath'; th.src=car.photo; th.alt=car.name;
+      (function(t){ t.addEventListener('error',function(){ var f=document.createElement('div'); f.className='ath'; f.textContent='\u{1F697}'; t.parentNode.replaceChild(f,t); }); })(th);
+    } else { th=document.createElement('div'); th.className='ath'; th.textContent='\u{1F697}'; }
+    var inf=document.createElement('div'); inf.className='ain';
+    inf.innerHTML='<div class="anm">'+esc(car.name)+'</div><div class="amt">'+esc(car.stock)+' &middot; K'+Number(car.price).toLocaleString()+' <span class="sp2 '+car.status+'">'+car.status+'</span></div>';
+    var ac=document.createElement('div'); ac.className='aac';
+    var eb=document.createElement('button'); eb.className='btn bb bsm'; eb.textContent='\u270F';
+    (function(cid){ eb.addEventListener('click',function(){ editCar(cid); }); })(car.id);
+    var db=document.createElement('button'); db.className='btn brd bsm'; db.textContent='\uD83D\uDDD1';
+    (function(cid){ db.addEventListener('click',function(){ delCar(cid); }); })(car.id);
+    ac.appendChild(eb); ac.appendChild(db);
+    row.appendChild(th); row.appendChild(inf); row.appendChild(ac);
+    list.appendChild(row);
+  });
+}
+
+/* ===== SAVE TO SITE ===== */
+function saveToSite(){
+  var msg=ge('smsg');
+  msg.textContent='Preparing download...';
+  var carsJSON=JSON.stringify(wk);
+  /* Build the new file by replacing the CARS array in the page source */
+  fetch(window.location.href+'?nc='+Date.now(),{cache:'no-store'})
+    .then(function(r){ return r.text(); })
+    .then(function(src){ doSave(src,carsJSON,msg); })
+    .catch(function(){
+      var src='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+      doSave(src,carsJSON,msg);
+    });
+}
+
+function doSave(src,carsJSON,msg){
+  /* Replace the CARS data between markers */
+  var out=src.replace(/\/\*\|CARS\|\*\/[\s\S]*?\/\*\|END\|\*\//,'/*|CARS|*/'+carsJSON+'/*|END|*/');
+  /* Replace PIN between markers */
+  out=out.replace(/\/\*\|PIN\|\*\/[\s\S]*?\/\*\|PEND\|\*\//,"/*|PIN|*/'"+PIN+"'/*|PEND|*/");
+  /* Download */
+  var blob=new Blob([out],{type:'text/html;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a'); a.href=url; a.download='index.html';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(url); },5000);
+  msg.textContent='\u2705 Downloaded with '+wk.length+' car(s). Now upload to GitHub!';
+}
+
+/* ===== CHANGE PIN ===== */
+function chgPin(){
+  var np=ge('np').value, cp=ge('cp').value, msg=ge('pmsg');
+  if(!/^\d{4}$/.test(np)){ msg.style.color='var(--red)'; msg.textContent='Must be 4 digits.'; return; }
+  if(np!==cp){ msg.style.color='var(--red)'; msg.textContent='PINs do not match.'; return; }
+  PIN=np;
+  msg.style.color='var(--gr)'; msg.textContent='\u2705 PIN updated! Save to Site to keep this PIN.';
+  ge('np').value=''; ge('cp').value='';
+  setTimeout(function(){ msg.textContent=''; },4000);
+}
+
+/* ===== TOAST ===== */
+function toast(msg){ var t=ge('tst'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); },3200); }
+
+/* ===== BACKDROP CLOSE ===== */
+['ovl','ova','ove'].forEach(function(id){
+  ge(id).addEventListener('click',function(e){
+    if(e.target!==this) return;
+    if(id==='ovl') closeL();
+    else if(id==='ova') closeA();
+    else closeE();
+  });
+});
+
+/* ===== INIT ===== */
+drawGrid();
+</script>
+</body>
+</html>
